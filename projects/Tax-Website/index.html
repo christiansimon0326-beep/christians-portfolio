@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TNC Consulting helps ambitious businesses build clarity, momentum, and lasting growth.">
+  <title>TNC Consulting | Strategy for what’s next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #16271f;
+      --forest: #164d3d;
+      --green: #197258;
+      --lime: #c7ed63;
+      --mist: #eaf0ea;
+      --cream: #f8f7f1;
+      --white: #ffffff;
+      --line: rgba(22, 39, 31, .15);
+      --shadow: 0 20px 55px rgba(20, 64, 49, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+
+    .topbar {
+      background: var(--ink);
+      color: #ebf6ed;
+      padding: 10px 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: .76rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .topbar p { margin: 0; }
+    .topbar a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+    header {
+      max-width: 1320px;
+      margin: 0 auto;
+      height: 83px;
+      padding: 0 4vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 5;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 700; letter-spacing: -.045em; font-size: 1.22rem; }
+    .brand-mark {
+      width: 35px; height: 35px; border-radius: 50%; display: grid; place-items: center;
+      background: var(--forest); color: var(--lime); font-family: "Playfair Display", serif; font-size: 1.05rem;
+    }
+    nav { display: flex; align-items: center; gap: clamp(18px, 2.6vw, 42px); font-size: .92rem; font-weight: 500; }
+    nav a:not(.nav-cta) { position: relative; }
+    nav a:not(.nav-cta)::after { content: ""; width: 0; height: 1px; background: var(--forest); position: absolute; left: 0; bottom: -5px; transition: width .25s; }
+    nav a:not(.nav-cta):hover::after { width: 100%; }
+    .nav-cta, .button {
+      background: var(--forest); color: var(--white); border: 1px solid var(--forest); border-radius: 3px;
+      padding: 11px 17px; font-size: .87rem; font-weight: 600; transition: .22s ease;
+    }
+    .nav-cta:hover, .button:hover { background: var(--green); border-color: var(--green); transform: translateY(-2px); }
+    .menu-button { display: none; background: none; border: 0; font-size: 1.45rem; color: var(--ink); }
+
+    .hero { max-width: 1320px; margin: 0 auto; padding: 46px 4vw 76px; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 7vw, 120px); align-items: center; min-height: 590px; }
+    .eyebrow { color: var(--green); font-family: "DM Mono", monospace; font-size: .76rem; letter-spacing: .09em; font-weight: 500; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+    .eyebrow::before { content: ""; display: inline-block; height: 1px; width: 30px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 690px; margin: 18px 0 23px; font-family: "Playfair Display", serif; letter-spacing: -.055em; font-size: clamp(3.4rem, 6.1vw, 6.15rem); font-weight: 600; line-height: .96; }
+    h1 em { color: var(--green); font-weight: 600; }
+    .hero-copy > p { color: #415249; max-width: 550px; font-size: 1.12rem; line-height: 1.65; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 11px; min-height: 48px; }
+    .button svg { transition: transform .2s; }
+    .button:hover svg { transform: translateX(4px); }
+    .button-outline { background: transparent; color: var(--forest); border-color: var(--forest); }
+    .button-outline:hover { background: var(--forest); color: var(--white); }
+    .hero-proof { display: flex; align-items: center; gap: 13px; margin-top: 39px; color: #59695f; font-size: .83rem; }
+    .face-stack { display: flex; }
+    .face { width: 29px; height: 29px; border-radius: 50%; border: 2px solid var(--cream); margin-left: -7px; background-size: cover; background-position: center; }
+    .face:first-child { margin-left: 0; }
+    .face:nth-child(1) { background: #d3a080; }
+    .face:nth-child(2) { background: #66877b; }
+    .face:nth-child(3) { background: #e4c968; }
+    .face:nth-child(4) { background: #ad6f62; }
+
+    .hero-panel { background: var(--forest); color: var(--white); padding: clamp(24px, 4vw, 50px); min-height: 440px; position: relative; overflow: hidden; box-shadow: var(--shadow); }
+    .hero-panel::before { content: ""; position: absolute; width: 330px; height: 330px; border-radius: 50%; border: 55px solid rgba(199, 237, 99, .85); right: -135px; top: -155px; }
+    .hero-panel::after { content: ""; position: absolute; width: 250px; height: 250px; border-radius: 50%; background: rgba(255,255,255,.06); left: -140px; bottom: -125px; }
+    .panel-content { position: relative; z-index: 1; }
+    .panel-kicker { font-family: "DM Mono", monospace; color: var(--lime); text-transform: uppercase; font-size: .72rem; letter-spacing: .1em; }
+    .panel-content h2 { font-family: "Playfair Display", serif; font-weight: 600; font-size: clamp(2rem, 3vw, 2.65rem); letter-spacing: -.04em; line-height: 1.08; margin: 35px 0 32px; max-width: 340px; }
+    .insight { border-top: 1px solid rgba(255,255,255,.27); padding: 17px 0; display: flex; align-items: center; gap: 18px; }
+    .insight:last-child { border-bottom: 1px solid rgba(255,255,255,.27); }
+    .insight-number { color: var(--lime); min-width: 54px; font-family: "Playfair Display", serif; font-size: 2.2rem; letter-spacing: -.06em; }
+    .insight-text span { font-size: .78rem; color: #b7cec1; display: block; margin-bottom: 1px; }
+    .insight-text strong { font-size: .94rem; font-weight: 500; }
+
+    .logo-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 23px 4vw; display: flex; justify-content: center; gap: clamp(20px, 6vw, 80px); align-items: center; flex-wrap: wrap; color: #6f7b73; }
+    .logo-strip span { font-family: "DM Mono", monospace; text-transform: uppercase; font-size: .75rem; letter-spacing: .09em; }
+    .logo-strip strong { color: var(--ink); font-size: 1.04rem; letter-spacing: -.05em; }
+
+    .section { max-width: 1320px; margin: 0 auto; padding: 110px 4vw; }
+    .section-heading { max-width: 720px; }
+    .section-heading h2 { font-family: "Playfair Display", serif; font-size: clamp(2.55rem, 4.5vw, 4.5rem); letter-spacing: -.055em; font-weight: 600; line-height: 1.04; margin: 16px 0 18px; }
+    .section-heading p { font-size: 1.06rem; line-height: 1.65; color: #52635a; max-width: 610px; }
+    .services-grid { margin-top: 52px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+    .service { padding: 30px 29px 30px 0; border-bottom: 1px solid var(--line); position: relative; min-height: 260px; }
+    .service:not(:nth-child(3n)) { border-right: 1px solid var(--line); padding-left: 29px; }
+    .service:nth-child(3n+1) { padding-left: 0; }
+    .service-icon { color: var(--green); width: 42px; height: 42px; margin-bottom: 53px; }
+    .service h3 { font-size: 1.12rem; letter-spacing: -.025em; margin-bottom: 9px; }
+    .service p { color: #596a60; margin: 0; font-size: .92rem; max-width: 290px; line-height: 1.6; }
+    .service a { display: inline-flex; margin-top: 19px; font-size: .82rem; font-weight: 700; color: var(--forest); border-bottom: 1px solid var(--forest); }
+
+    .approach { background: var(--mist); }
+    .approach-inner { max-width: 1320px; margin: 0 auto; padding: 100px 4vw; display: grid; grid-template-columns: .86fr 1.14fr; gap: 10vw; }
+    .approach-left h2 { font-family: "Playfair Display", serif; font-size: clamp(2.4rem, 4.2vw, 4.15rem); letter-spacing: -.055em; line-height: 1.04; font-weight: 600; margin: 17px 0 22px; }
+    .approach-left p { color: #52635a; max-width: 380px; line-height: 1.65; }
+    .process { border-top: 1px solid var(--line); }
+    .process-item { display: grid; grid-template-columns: 75px 1fr; gap: 18px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+    .process-num { color: var(--green); font-family: "DM Mono", monospace; font-size: .78rem; padding-top: 4px; }
+    .process-item h3 { font-size: 1.17rem; margin: 0 0 8px; letter-spacing: -.025em; }
+    .process-item p { font-size: .92rem; color: #596a60; max-width: 510px; margin: 0; }
+
+    .quote-section { max-width: 1320px; margin: 0 auto; padding: 110px 4vw; }
+    .quote-card { display: grid; grid-template-columns: .9fr 1.1fr; background: var(--ink); color: var(--white); overflow: hidden; }
+    .quote-intro { padding: clamp(34px, 5vw, 66px); background: var(--forest); position: relative; }
+    .quote-intro::after { content: ""; position: absolute; height: 290px; width: 290px; border-radius: 50%; border: 45px solid var(--lime); bottom: -185px; left: -125px; opacity: .95; }
+    .quote-intro > * { position: relative; z-index: 1; }
+    .quote-intro h2 { font-family: "Playfair Display", serif; font-size: clamp(2.4rem, 4vw, 4.1rem); letter-spacing: -.055em; line-height: 1.02; font-weight: 600; margin: 15px 0 22px; }
+    .quote-intro p { color: #cfdfd5; max-width: 320px; line-height: 1.65; }
+    .contact-info { margin-top: 57px; font-size: .87rem; }
+    .contact-info p { margin: 0 0 5px; }
+    .contact-info a { color: var(--lime); font-weight: 600; }
+    .form-wrap { padding: clamp(32px, 5vw, 62px); }
+    .form-wrap h3 { font-size: 1.25rem; letter-spacing: -.03em; margin-bottom: 25px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+    .form-field { display: flex; flex-direction: column; gap: 7px; }
+    .form-field.full { grid-column: 1 / -1; }
+    label { font-size: .78rem; font-weight: 600; color: #ccd8d0; }
+    input, select, textarea { width: 100%; background: transparent; border: 0; border-bottom: 1px solid #61776b; color: var(--white); padding: 9px 0; outline: none; border-radius: 0; }
+    select option { color: var(--ink); }
+    textarea { resize: vertical; min-height: 72px; }
+    input:focus, select:focus, textarea:focus { border-bottom-color: var(--lime); }
+    .form-wrap .button { margin-top: 29px; background: var(--lime); color: var(--ink); border-color: var(--lime); }
+    .form-wrap .button:hover { background: #d4f77c; }
+    .form-note { color: #9db3a6; font-size: .73rem; margin: 14px 0 0; }
+    .form-message { display: none; margin: 18px 0 0; color: var(--lime); font-weight: 600; }
+
+    footer { background: #0e1c16; color: #d6e3da; padding: 49px 4vw 25px; }
+    .footer-main { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 1.45fr repeat(3, 1fr); gap: 35px; }
+    footer .brand { color: var(--white); }
+    footer .brand-mark { background: var(--lime); color: var(--forest); }
+    .footer-tagline { margin: 17px 0 0; color: #a8bdb0; max-width: 260px; font-size: .87rem; line-height: 1.6; }
+    .footer-col h4 { color: var(--white); font-size: .77rem; text-transform: uppercase; letter-spacing: .08em; margin: 5px 0 16px; }
+    .footer-col a { display: block; font-size: .86rem; color: #a8bdb0; margin: 0 0 9px; }
+    .footer-col a:hover { color: var(--lime); }
+    .footer-bottom { max-width: 1320px; margin: 45px auto 0; border-top: 1px solid rgba(255,255,255,.13); padding-top: 20px; display: flex; justify-content: space-between; color: #789082; font-family: "DM Mono", monospace; font-size: .68rem; }
+
+    @media (max-width: 820px) {
+      nav { display: none; position: absolute; top: 70px; right: 4vw; left: 4vw; padding: 20px; background: var(--cream); flex-direction: column; align-items: stretch; box-shadow: var(--shadow); }
+      nav.open { display: flex; }
+      .menu-button { display: block; }
+      .hero, .approach-inner, .quote-card { grid-template-columns: 1fr; }
+      .hero { padding-top: 28px; }
+      .hero-panel { min-height: auto; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service:not(:nth-child(3n)) { border-right: 0; padding-left: 0; }
+      .service:nth-child(odd) { border-right: 1px solid var(--line); padding-right: 29px; }
+      .service:nth-child(even) { padding-left: 29px; }
+      .footer-main { grid-template-columns: 1.4fr 1fr 1fr; }
+      .footer-main > :first-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 540px) {
+      .topbar p:first-child { display: none; }
+      .topbar { justify-content: center; }
+      header { height: 72px; }
+      .hero { padding-bottom: 55px; }
+      h1 { font-size: 3.25rem; }
+      .hero-actions .button { width: 100%; }
+      .services-grid, .form-grid { grid-template-columns: 1fr; }
+      .service, .service:nth-child(odd), .service:nth-child(even) { padding: 27px 0; border-right: 0; }
+      .service-icon { margin-bottom: 30px; }
+      .section, .quote-section { padding-top: 76px; padding-bottom: 76px; }
+      .approach-inner { padding-top: 76px; padding-bottom: 76px; }
+      .form-field.full { grid-column: auto; }
+      .footer-main { grid-template-columns: 1fr 1fr; }
+      .footer-main > :first-child { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <p>Independent thinking. Meaningful results.</p>
+    <a href="#quote">Start a conversation <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header>
+    <a class="brand" href="#top" aria-label="TNC Consulting home"><span class="brand-mark">T</span><span>TNC Consulting</span></a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav aria-label="Main navigation">
+      <a href="#services">Expertise</a>
+      <a href="#approach">Our approach</a>
+      <a href="#about">About us</a>
+      <a class="nav-cta" href="#quote">Book a consultation</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">Strategy for what’s next</div>
+        <h1 id="hero-title">Turn ambition into <em>lasting momentum.</em></h1>
+        <p>We partner with ambitious leaders to solve complex problems, seize new opportunities, and build businesses that are ready for what’s ahead.</p>
+        <div class="hero-actions">
+          <a class="button" href="#quote">Book a free consultation <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="button button-outline" href="#services">Explore our work</a>
+        </div>
+        <div class="hero-proof"><div class="face-stack" aria-hidden="true"><span class="face"></span><span class="face"></span><span class="face"></span><span class="face"></span></div><span>Trusted by growth-minded teams across industries</span></div>
+      </div>
+      <aside class="hero-panel" aria-label="TNC impact">
+        <div class="panel-content">
+          <div class="panel-kicker">Built for progress</div>
+          <h2>Clearer decisions. Stronger businesses.</h2>
+          <div class="insight"><div class="insight-number">10+</div><div class="insight-text"><span>Years of</span><strong>consulting experience</strong></div></div>
+          <div class="insight"><div class="insight-number">87%</div><div class="insight-text"><span>Of clients</span><strong>come through referrals</strong></div></div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="logo-strip" aria-label="Industries we serve"><span>Trusted perspective for</span><strong>Professional Services</strong><strong>Retail</strong><strong>Real Estate</strong><strong>Technology</strong><strong>Nonprofits</strong></div>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div class="eyebrow">How we help</div>
+        <h2 id="services-title">The right support at the right moment.</h2>
+        <p>Whether you’re navigating a pivotal change or planning your next phase of growth, we bring a practical, tailored perspective to the table.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="18.5" stroke="currentColor" stroke-width="2"/><path d="m19 29 13-13M21 16h11v11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Growth Strategy</h3><p>Define the opportunities that matter and create a focused path to capture them.</p><a href="#quote">Learn more →</a>
+        </article>
+        <article class="service">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 37V11m0 26h30M16 30l8-9 6 5 9-13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="39" cy="13" r="2" fill="currentColor"/></svg>
+          <h3>Financial Advisory</h3><p>Transform numbers into insight with financial guidance designed for confident decisions.</p><a href="#quote">Learn more →</a>
+        </article>
+        <article class="service">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M15 15h18v18H15zM7 7h10M7 7v10m34-10H31m10 0v10M7 41h10M7 41V31m34 10H31m10 0V31" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Operations &amp; Systems</h3><p>Build smarter, scalable ways of working that free your team to do its best work.</p><a href="#quote">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach-inner">
+        <div class="approach-left">
+          <div class="eyebrow">Our approach</div>
+          <h2 id="approach-title">Less noise. More forward motion.</h2>
+          <p>Big thinking only counts when it leads to action. Our work is collaborative, candid, and built around outcomes you can actually see.</p>
+          <a class="button button-outline" href="#quote" style="margin-top: 25px;">Meet with our team</a>
+        </div>
+        <div class="process">
+          <article class="process-item"><div class="process-num">01 / Listen</div><div><h3>Start with what matters.</h3><p>We get under the surface of your business, your goals, and the friction holding you back.</p></div></article>
+          <article class="process-item"><div class="process-num">02 / Focus</div><div><h3>Find the signal in the noise.</h3><p>We turn complexity into a clear point of view and a shared set of priorities.</p></div></article>
+          <article class="process-item"><div class="process-num">03 / Move</div><div><h3>Make progress visible.</h3><p>We work alongside your people to put the plan into motion and keep the momentum going.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quote" aria-labelledby="quote-title">
+      <div class="quote-card">
+        <div class="quote-intro">
+          <div class="panel-kicker">Let’s get started</div>
+          <h2 id="quote-title">Your next smart move starts here.</h2>
+          <p>Tell us a little about where you are and where you want to go. We’ll be in touch within one business day.</p>
+          <div class="contact-info"><p>Prefer to talk now?</p><a href="mailto:hello@tncconsulting.com">hello@tncconsulting.com</a><br><a href="tel:+15550198264">(555) 019-8264</a></div>
+        </div>
+        <div class="form-wrap">
+          <h3>Request a consultation or quote</h3>
+          <form id="consultation-form">
+            <div class="form-grid">
+              <div class="form-field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+              <div class="form-field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div class="form-field"><label for="company">Company</label><input id="company" name="company" type="text" autocomplete="organization"></div>
+              <div class="form-field"><label for="interest">I’m interested in</label><select id="interest" name="interest" required><option value="" disabled selected>Select an option</option><option>Book a consultation</option><option>Request a project quote</option><option>Growth strategy</option><option>Financial advisory</option><option>Operations &amp; systems</option></select></div>
+              <div class="form-field full"><label for="message">What can we help you solve?</label><textarea id="message" name="message" placeholder="A few details about your goals, team, or project..."></textarea></div>
+            </div>
+            <button class="button" type="submit">Send my request <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p class="form-note">By submitting this form, you agree to be contacted by TNC Consulting.</p>
+            <p class="form-message" id="form-message" role="status">Thanks — your request is on its way. We’ll be in touch shortly.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <div class="footer-main">
+      <div><a class="brand" href="#top"><span class="brand-mark">T</span><span>TNC Consulting</span></a><p class="footer-tagline">Practical strategy for businesses with places to go.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="#services">Expertise</a><a href="#approach">Our approach</a><a href="#quote">Contact</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="mailto:hello@tncconsulting.com">Email us</a><a href="tel:+15550198264">(555) 019-8264</a><a href="#quote">Book a call</a></div>
+      <div class="footer-col"><h4>Follow</h4><a href="#top">LinkedIn ↗</a><a href="#top">Instagram ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> TNC Consulting. All rights reserved.</span><span>Strategy that moves you.</span></div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const nav = document.querySelector('nav');
+    menuButton.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', isOpen);
+      menuButton.textContent = isOpen ? '×' : '☰';
+    });
+    document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('consultation-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      document.getElementById('form-message').style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

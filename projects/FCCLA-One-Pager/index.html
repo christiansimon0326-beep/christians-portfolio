@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Morrow High School FCCLA | Chapter Mission Plan 2026–2027</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --red: #c62828;
+            --dark-red: #8e1b1b;
+            --light-red: #fff0f0;
+            --cream: #fffaf3;
+            --white: #ffffff;
+            --gold: #d7ad50;
+            --light-gold: #fff5d9;
+            --green: #5d8562;
+            --light-green: #eef7ee;
+            --blue: #537da5;
+            --light-blue: #edf4fb;
+            --purple: #80649c;
+            --light-purple: #f4eef9;
+            --ink: #302522;
+            --soft: #6e625c;
+            --line: #e6d7ca;
+            --shadow: rgba(65, 35, 25, .10);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 10% 10%,
+                    rgba(198, 40, 40, .08) 0 2px,
+                    transparent 3px),
+                radial-gradient(circle at 90% 15%,
+                    rgba(215, 173, 80, .10) 0 2px,
+                    transparent 3px),
+                #ddd2c8;
+
+            color: var(--ink);
+            font-family: "Nunito", Arial, sans-serif;
+            line-height: 1.35;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .page {
+            width: min(1020px, calc(100% - 20px));
+            margin: 18px auto;
+            background: var(--cream);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 18px 50px rgba(55, 30, 20, .20);
+        }
+
+        /* =========================
+           HEADER
+           ========================= */
+
+        header {
+            padding: 22px 26px 18px;
+
+            background:
+                linear-gradient(135deg,
+                    #fffdf9 0%,
+                    #fff8ee 58%,
+                    #fff0ed 100%);
+
+            border-bottom: 5px solid var(--red);
+        }
+
+        .header-top {
+            display: grid;
+            grid-template-columns: 72px 72px 1fr 150px;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .logo-frame {
+            width: 72px;
+            height: 72px;
+            padding: 6px;
+            background: var(--white);
+            border: 2px solid var(--line);
+            border-radius: 16px;
+            box-shadow: 0 5px 12px var(--shadow);
+        }
+
+        .logo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .kicker {
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: 2px;
+        }
+
+        h1 {
+            font-family: "Fraunces", Georgia, serif;
+            color: var(--ink);
+            font-size: 34px;
+            line-height: 1;
+            letter-spacing: -.02em;
+        }
+
+        .sub {
+            color: var(--soft);
+            font-size: 12px;
+            font-weight: 800;
+            margin-top: 5px;
+        }
+
+        .year {
+            text-align: right;
+            color: var(--soft);
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+        .year strong {
+            display: block;
+            color: var(--red);
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 25px;
+            line-height: 1;
+            margin-top: 3px;
+        }
+
+        .theme-row {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 12px;
+        }
+
+        .theme-label {
+            padding: 4px 8px;
+            background: var(--red);
+            color: white;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+
+        .theme {
+            color: #553a33;
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 17px;
+            font-style: italic;
+        }
+
+        .national-theme-row {
+            margin-top: 8px;
+        }
+
+        .national-theme-row .theme-label {
+            background: var(--gold);
+            color: #4f3b12;
+        }
+
+        /* =========================
+           MAIN
+           ========================= */
+
+        .wrap {
+            padding: 10px 16px 8px;
+            display: grid;
+            gap: 6px;
+        }
+
+        .chapter-note {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 7px;
+            margin-top: 1px;
+        }
+
+        .chapter-note div {
+            padding: 6px 8px;
+            border-radius: 8px;
+            background: var(--light-red);
+            border: 1px solid #f0d5d1;
+            text-align: center;
+            font-size: 7px;
+            font-weight: 900;
+            color: var(--red);
+        }
+
+        .chapter-note div:nth-child(2) {
+            background: var(--light-gold);
+            border-color: #ead9ad;
+            color: #80621f;
+        }
+
+        .chapter-note div:nth-child(3) {
+            background: var(--light-green);
+            border-color: #d5e5d5;
+            color: var(--green);
+        }
+
+        section {
+            min-width: 0;
+        }
+
+        h2 {
+            margin-bottom: 6px;
+            color: var(--red);
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 15px;
+            line-height: 1.05;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        /* =========================
+           CARDS
+           ========================= */
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 9px;
+            box-shadow: 0 4px 12px rgba(60, 35, 25, .05);
+        }
+
+        /* =========================
+           INTRO
+           ========================= */
+
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1.45fr .9fr 1fr;
+            gap: 9px;
+        }
+
+        .mission-card {
+            border-top: 4px solid var(--red);
+        }
+
+        .mission-label {
+            display: inline-block;
+            padding: 3px 7px;
+            margin-bottom: 4px;
+            background: var(--light-red);
+            border-radius: 999px;
+            color: var(--red);
+            font-size: 7px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .mission-card p {
+            font-size: 9.5px;
+            line-height: 1.4;
+        }
+
+        .why-list {
+            list-style: none;
+            display: grid;
+            gap: 4px;
+        }
+
+        .why-list li {
+            position: relative;
+            padding-left: 12px;
+            font-size: 8px;
+            line-height: 1.3;
+        }
+
+        .why-list li::before {
+            content: "♥";
+            position: absolute;
+            left: 0;
+            color: var(--red);
+            font-size: 7px;
+        }
+
+        .info-card {
+            border-top: 4px solid var(--gold);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 7px;
+            padding: 4px 0;
+            border-bottom: 1px dashed var(--line);
+            font-size: 8px;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-row strong {
+            color: var(--red);
+        }
+
+        /* =========================
+           GOALS
+           ========================= */
+
+        .smart-goals {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 7px;
+        }
+
+        .goal {
+            padding: 8px;
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            min-height: 82px;
+        }
+
+        .goal:nth-child(1) {
+            border-top: 4px solid var(--red);
+        }
+
+        .goal:nth-child(2) {
+            border-top: 4px solid var(--green);
+        }
+
+        .goal:nth-child(3) {
+            border-top: 4px solid var(--blue);
+        }
+
+        .goal:nth-child(4) {
+            border-top: 4px solid var(--purple);
+        }
+
+        .goal:nth-child(5) {
+            border-top: 4px solid var(--gold);
+        }
+
+        .goal-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 4px;
+            background: var(--light-red);
+            color: var(--red);
+            border-radius: 50%;
+            font-size: 8px;
+            font-weight: 900;
+        }
+
+        .goal:nth-child(2) .goal-number {
+            background: var(--light-green);
+            color: var(--green);
+        }
+
+        .goal:nth-child(3) .goal-number {
+            background: var(--light-blue);
+            color: var(--blue);
+        }
+
+        .goal:nth-child(4) .goal-number {
+            background: var(--light-purple);
+            color: var(--purple);
+        }
+
+        .goal:nth-child(5) .goal-number {
+            background: var(--light-gold);
+            color: #89671f;
+        }
+
+        .goal h3 {
+            margin-bottom: 4px;
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 12px;
+        }
+
+        .goal p {
+            color: var(--soft);
+            font-size: 7.8px;
+            line-height: 1.35;
+        }
+
+        /* =========================
+           ACTIVITIES
+           ========================= */
+
+        .middle-grid {
+            display: grid;
+            grid-template-columns: 1.55fr .75fr .95fr;
+            gap: 9px;
+        }
+
+        .activity-card {
+            border-top: 4px solid var(--red);
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 6px;
+        }
+
+        .activity {
+            padding: 5px;
+            background: #fff8f3;
+            border: 1px solid #f0ddd1;
+            border-radius: 6px;
+            font-size: 7px;
+            font-weight: 800;
+        }
+
+        .activity::before {
+            content: "♥";
+            margin-right: 4px;
+            color: var(--red);
+            font-size: 5px;
+        }
+
+        .numbers-card {
+            border-top: 4px solid var(--gold);
+        }
+
+        .numbers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+
+        .stat {
+            padding: 4px;
+            text-align: center;
+        }
+
+        .stat b {
+            display: block;
+            color: var(--red);
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .stat span {
+            display: block;
+            margin-top: 2px;
+            color: var(--soft);
+            font-size: 5.5px;
+            font-weight: 900;
+        }
+
+        .season-card {
+            border-top: 4px solid var(--blue);
+        }
+
+        .season {
+            padding: 5px 0;
+            border-top: 1px dashed var(--line);
+            font-size: 7px;
+            line-height: 1.3;
+        }
+
+        .season:first-of-type {
+            border-top: none;
+        }
+
+        .season strong {
+            color: var(--red);
+        }
+
+        .adviser-contact {
+            margin-top: 4px;
+            padding-top: 4px;
+            border-top: 1px solid var(--line);
+            display: grid;
+            gap: 1px;
+            font-size: 6px;
+            line-height: 1.2;
+        }
+
+        .adviser-contact strong {
+            color: var(--red);
+            font-size: 7px;
+        }
+
+        .adviser-contact span:last-child {
+            color: var(--soft);
+        }
+
+        .adviser-contact a {
+            color: var(--red);
+            text-decoration: none;
+            font-weight: 900;
+            overflow-wrap: anywhere;
+            font-size: 6px;
+        }
+
+        /* =========================
+           PHOTO GALLERY
+           ========================= */
+
+        .gallery-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gallery-title>span {
+            color: var(--soft);
+            font-size: 6.5px;
+            font-weight: 800;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 7px;
+        }
+
+        .shot figure {
+            padding: 4px;
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(60, 35, 25, .06);
+        }
+
+        .shot img {
+            width: 100%;
+            height: 105px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+        }
+
+        .shot h3 {
+            margin-top: 4px;
+            color: var(--red);
+            font-size: 7px;
+            font-weight: 900;
+        }
+
+        .shot p {
+            color: var(--soft);
+            font-size: 5.5px;
+            line-height: 1.15;
+        }
+
+        /* =========================
+           VISION
+           ========================= */
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: 1.35fr .9fr;
+            gap: 9px;
+        }
+
+        .vision-card {
+            border-left: 4px solid var(--red);
+            background:
+                linear-gradient(135deg,
+                    white,
+                    #fff4ef);
+        }
+
+        .vision-card p {
+            color: #59443e;
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 9px;
+            font-style: italic;
+            line-height: 1.35;
+        }
+
+        .this-year {
+            border-top: 4px solid var(--gold);
+        }
+
+        .this-year p {
+            color: #59443e;
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 9px;
+            font-style: italic;
+            line-height: 1.35;
+        }
+
+        /* =========================
+           OFFICERS
+           ========================= */
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 125px;
+            gap: 9px;
+            align-items: start;
+        }
+
+        .officers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+        }
+
+        .officer {
+            padding: 5px;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        .officer h3 {
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 10px;
+            line-height: 1.1;
+        }
+
+        .officer .role {
+            margin-top: 2px;
+            color: var(--red);
+            font-size: 8px;
+            font-weight: 900;
+        }
+
+        .adviser {
+            background: var(--light-gold);
+            border-color: #e8cb8c;
+        }
+
+        .adviser .role {
+            color: #89671f;
+        }
+
+        /* =========================
+           QR CODE
+           ========================= */
+
+        .qr {
+            padding: 6px;
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 9px;
+            text-align: center;
+        }
+
+        .qr h2 {
+            color: var(--red);
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+
+        .qr img {
+            width: 70px;
+            height: 70px;
+            margin: 3px auto;
+            padding: 2px;
+            border: 1px solid var(--line);
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
+        .qr p {
+            color: var(--soft);
+            font-size: 5.5px;
+            font-weight: 900;
+        }
+
+        .qr a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           FOOTER
+           ========================= */
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 6px 20px;
+            background: #fffdf9;
+            border-top: 3px solid var(--red);
+            color: var(--soft);
+            font-size: 6.5px;
+            font-weight: 800;
+        }
+
+        footer strong {
+            color: var(--red);
+        }
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media screen and (max-width: 900px) {
+
+            .header-top {
+                grid-template-columns: 60px 60px 1fr;
+            }
+
+            .logo-frame {
+                width: 60px;
+                height: 60px;
+            }
+
+            .year {
+                grid-column: 1 / -1;
+                text-align: left;
+            }
+
+            .top-grid,
+            .middle-grid,
+            .vision-grid,
+            .bottom-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .smart-goals {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .officers {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .qr {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                background: var(--cream);
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            .header-top,
+            .top-grid,
+            .smart-goals,
+            .middle-grid,
+            .gallery,
+            .vision-grid,
+            .bottom-grid,
+            .chapter-note {
+                grid-template-columns: 1fr;
+            }
+
+            .officers {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .wrap {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .gallery-title {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* =========================
+           FLYER / LETTER PAGE
+           ========================= */
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 18px 22px 14px;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .kicker,
+        .sub {
+            font-size: 11px;
+        }
+
+        .theme-label,
+        .chapter-note div {
+            font-size: 10px;
+        }
+
+        .theme {
+            font-size: 16px;
+        }
+
+        .wrap {
+            padding: 8px 14px 6px;
+            gap: 5px;
+        }
+
+        .card {
+            padding: 8px;
+        }
+
+        .mission-card p,
+        .vision-card p,
+        .this-year p {
+            font-size: 10px;
+        }
+
+        .why-list li,
+        .info-row {
+            font-size: 9px;
+        }
+
+        .chapter-note div {
+            padding: 7px;
+        }
+
+        .goal {
+            min-height: 90px;
+            padding: 9px;
+        }
+
+        .goal-number {
+            width: 28px;
+            height: 28px;
+            font-size: 9px;
+        }
+
+        .goal h3 {
+            font-size: 14px;
+        }
+
+        .goal p,
+        .activity,
+        .season {
+            font-size: 9px;
+        }
+
+        .activity {
+            padding: 6px;
+        }
+
+        .stat b {
+            font-size: 21px;
+        }
+
+        .stat span,
+        .adviser-contact,
+        .adviser-contact a {
+            font-size: 7px;
+        }
+
+        .adviser-contact strong {
+            font-size: 8px;
+        }
+
+        .shot img {
+            height: 78px;
+        }
+
+        .gallery-title>span,
+        .shot p {
+            font-size: 7px;
+        }
+
+        .shot h3 {
+            font-size: 9px;
+        }
+
+        .officer h3 {
+            font-size: 10px;
+        }
+
+        .officer .role {
+            font-size: 8px;
+        }
+
+        .qr h2 {
+            font-size: 11px;
+        }
+
+        .qr img {
+            width: 82px;
+            height: 82px;
+        }
+
+        .qr p,
+        footer {
+            font-size: 8px;
+        }
+
+        footer {
+            padding: 7px 18px;
+        }
+
+        @media print {
+            @page {
+                size: letter portrait;
+                margin: 0.25in;
+            }
+
+            html,
+            body {
+                width: 8in;
+                height: 10.5in;
+                margin: 0;
+                background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .page {
+                /*
+                   Lay out slightly wider, then use browser zoom so the complete
+                   design fits the 8in × 10.5in printable area without clipping.
+                */
+                width: 8.8889in;
+                height: 11.6667in;
+                min-height: 0;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+                zoom: .9;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .wrap {
+                flex: 1 1 auto;
+                min-height: 0;
+                align-content: space-between;
+            }
+
+            .wrap>section,
+            .card,
+            .goal,
+            .shot,
+            .qr {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .qr {
+                padding: 4px;
+            }
+
+            .qr h2 {
+                font-size: 10px;
+            }
+
+            .qr img {
+                width: 78px;
+                height: 78px;
+                margin: 2px auto;
+            }
+
+            .qr p {
+                font-size: 7px;
+            }
+
+            .bottom-grid>article>h2 {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            .bottom-grid {
+                grid-template-columns: 1fr 135px;
+            }
+
+            .officers {
+                gap: 4px;
+            }
+
+            .officer {
+                padding: 3px;
+            }
+
+            .officer h3 {
+                font-size: 9px;
+            }
+
+            .officer .role {
+                margin-top: 1px;
+                font-size: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="header-top">
+
+                <div class="logo-frame">
+                    <img src="images/fccla-logo.png" alt="Official FCCLA Logo">
+                </div>
+
+                <div class="logo-frame">
+                    <img src="images/morrow-logo.png" alt="Morrow High School Logo">
+                </div>
+
+                <div>
+
+                    <div class="kicker">
+                        Family, Career and Community Leaders of America
+                    </div>
+
+                    <h1>
+                        Morrow High School FCCLA
+                    </h1>
+
+                    <p class="sub">
+                        A home for Mustangs who want to lead,
+                        serve, and grow together
+                    </p>
+
+                </div>
+
+                <div class="year">
+
+                    Chapter Mission Plan
+
+                    <strong>
+                        2026–2027
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="theme-row">
+
+                <span class="theme-label">
+                    Our theme
+                </span>
+
+                <div class="theme">
+                    “Leading With Purpose, Serving With Heart”
+                </div>
+
+            </div>
+
+            <div class="theme-row national-theme-row">
+
+                <span class="theme-label">
+                    National FCCLA theme
+                </span>
+
+                <div class="theme">
+                    “Where Leaders Are Made”
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- MAIN -->
+
+        <main class="wrap">
+
+            <!-- MISSION -->
+
+            <section class="top-grid">
+
+                <article class="card mission-card">
+
+                    <span class="mission-label">
+                        What we’re here for
+                    </span>
+
+                    <h2>
+                        What we’re here for
+                    </h2>
+
+                    <p>
+                        Morrow High School FCCLA empowers students
+                        to become leaders, strengthen families,
+                        explore careers, serve their community,
+                        and create meaningful connections through
+                        leadership and service. Everyone has a place here.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h2>
+                        Why join us?
+                    </h2>
+
+                    <ul class="why-list">
+
+                        <li>
+                            Lead with more confidence.
+                        </li>
+
+                        <li>
+                            Connect with friends and professionals.
+                        </li>
+
+                        <li>
+                            Serve Morrow.
+                        </li>
+
+                        <li>
+                            Create projects that matter.
+                        </li>
+
+                        <li>
+                            Compete in STAR Events when you’re ready.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <article class="card info-card">
+
+                    <h2>
+                        Chapter Information
+                    </h2>
+
+                    <div class="info-row">
+                        <strong>School</strong>
+                        <span>Morrow High School</span>
+                    </div>
+
+                    <div class="info-row">
+                        <strong>Region</strong>
+                        <span>Region 4</span>
+                    </div>
+
+                    <div class="info-row">
+                        <strong>School Year</strong>
+                        <span>2026–2027</span>
+                    </div>
+
+                    <div class="info-row">
+                        <strong>Theme</strong>
+                        <span>Lead • Serve • Grow</span>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CHAPTER NOTE -->
+
+            <section class="chapter-note">
+
+                <div>
+                    LEADERSHIP • Build confidence
+                </div>
+
+                <div>
+                    SERVICE • Make a difference
+                </div>
+
+                <div>
+                    FAMILY • Everyone belongs
+                </div>
+
+            </section>
+
+            <!-- GOALS -->
+
+            <section>
+
+                <h2>
+                    What we’re aiming for
+                </h2>
+
+                <div class="smart-goals">
+
+                    <article class="goal">
+
+                        <div class="goal-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Grow
+                        </h3>
+
+                        <p>
+                            Increase active membership by
+                            <strong>30%</strong>.
+                        </p>
+
+                    </article>
+
+                    <article class="goal">
+
+                        <div class="goal-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Lead
+                        </h3>
+
+                        <p>
+                            Host at least
+                            <strong>4 leadership workshops</strong>.
+                        </p>
+
+                    </article>
+
+                    <article class="goal">
+
+                        <div class="goal-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Serve
+                        </h3>
+
+                        <p>
+                            Complete
+                            <strong>6 community service projects</strong>.
+                        </p>
+
+                    </article>
+
+                    <article class="goal">
+
+                        <div class="goal-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Compete
+                        </h3>
+
+                        <p>
+                            Prepare members for FCCLA
+                            <strong>STAR Events</strong>.
+                        </p>
+
+                    </article>
+
+                    <article class="goal">
+
+                        <div class="goal-number">
+                            05
+                        </div>
+
+                        <h3>
+                            Show up
+                        </h3>
+
+                        <p>
+                            Keep
+                            <strong>75% average event attendance</strong>.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <p style="
+                    margin-top: 7px;
+                    font-size: 9px;
+                    font-weight: 800;
+                    color: var(--soft);
+                ">
+                    Come as you are. Connect, create, serve,
+                    lead, and celebrate — that’s our year.
+                </p>
+
+            </section>
+
+            <!-- YEAR TOGETHER -->
+
+            <section class="middle-grid">
+
+                <article class="card activity-card">
+
+                    <h2>
+                        A year together
+                    </h2>
+
+                    <div class="activity-grid">
+
+                        <div class="activity">
+                            Family &amp; Friends Gathering
+                        </div>
+
+                        <div class="activity">
+                            Officer Training
+                        </div>
+
+                        <div class="activity">
+                            Leadership Workshops
+                        </div>
+
+                        <div class="activity">
+                            Community Service Projects
+                        </div>
+
+                        <div class="activity">
+                            Holiday Giving Drive
+                        </div>
+
+                        <div class="activity">
+                            Career Exploration Events
+                        </div>
+
+                        <div class="activity">
+                            College Readiness Sessions
+                        </div>
+
+                        <div class="activity">
+                            STAR Events Preparation
+                        </div>
+
+                        <div class="activity">
+                            Member Recognition Night
+                        </div>
+
+                        <div class="activity">
+                            FCCLA Week Celebration
+                        </div>
+
+                        <div class="activity">
+                            Family &amp; Community Outreach
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="card numbers-card">
+
+                    <h2>
+                        By the numbers
+                    </h2>
+
+                    <div class="numbers">
+
+                        <div class="stat">
+                            <b>50+</b>
+                            <span>members</span>
+                        </div>
+
+                        <div class="stat">
+                            <b>250</b>
+                            <span>service hours</span>
+                        </div>
+
+                        <div class="stat">
+                            <b>6</b>
+                            <span>projects</span>
+                        </div>
+
+                        <div class="stat">
+                            <b>10+</b>
+                            <span>events</span>
+                        </div>
+
+                        <div class="stat">
+                            <b>75%</b>
+                            <span>participation</span>
+                        </div>
+
+                        <div class="stat">
+                            <b>1</b>
+                            <span>chapter • one family</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="card season-card">
+
+                    <h2>
+                        Chapter Year Outlook
+                    </h2>
+
+                    <div class="season">
+
+                        <strong>Fall.</strong>
+
+                        Recruitment, chapter kickoff,
+                        officer training
+
+                    </div>
+
+                    <div class="season">
+
+                        <strong>Winter.</strong>
+
+                        Service, fundraisers, leadership
+
+                    </div>
+
+                    <div class="season">
+
+                        <strong>Spring.</strong>
+
+                        STAR Events, recognition, outreach
+
+                    </div>
+
+                    <div class="season">
+
+                        <strong>Always.</strong>
+
+                        Family, career, and community
+
+                    </div>
+
+                    <div class="adviser-contact">
+
+                        <strong>
+                            Adviser Contact
+                        </strong>
+
+                        <span>
+                            Ms. Trinni Yarn
+                        </span>
+
+                        <span>
+                            Chapter Adviser • Morrow High School FCCLA
+                        </span>
+
+                        <a href="mailto:trinni.yarn@clayton.k12.ga.us">
+                            trinni.yarn@clayton.k12.ga.us
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- PHOTOS -->
+
+            <section>
+
+                <div class="gallery-title">
+
+                    <h2>
+                        This is us
+                    </h2>
+
+                    <span>
+                        Our chapter • Our school • Our community
+                    </span>
+
+                </div>
+
+                <div class="gallery">
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/officers.jpg"
+                                alt="Morrow FCCLA members collaborating at a chapter meeting">
+
+                        </figure>
+
+                        <h3>
+                            Chapter family
+                        </h3>
+
+                        <p>
+                            Kicking off the year together
+                        </p>
+
+                    </article>
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/family-friends.jpg" alt="Family and friends gathering at Morrow FCCLA">
+
+                        </figure>
+
+                        <h3>
+                            Family &amp; friends
+                        </h3>
+
+                        <p>
+                            Room for everyone
+                        </p>
+
+                    </article>
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/service-project.jpg"
+                                alt="FCCLA members working together during a chapter activity">
+
+                        </figure>
+
+                        <h3>
+                            In the work
+                        </h3>
+
+                        <p>
+                            Hands-on and side by side
+                        </p>
+
+                    </article>
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/event-photo.jpg" alt="Welcome to FCCLA presentation at Morrow High School">
+
+                        </figure>
+
+                        <h3>
+                            Chapter events
+                        </h3>
+
+                        <p>
+                            Learn, laugh, and lead
+                        </p>
+
+                    </article>
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/school-photo.jpg" alt="Morrow High School FCCLA gathered near campus">
+
+                        </figure>
+
+                        <h3>
+                            Mustangs
+                        </h3>
+
+                        <p>
+                            Proud to represent Morrow
+                        </p>
+
+                    </article>
+
+                    <article class="shot">
+
+                        <figure>
+
+                            <img src="images/community-event.jpg"
+                                alt="Morrow High School FCCLA members helping someone in need during a community service event">
+
+                        </figure>
+
+                        <h3>
+                            Community in action
+                        </h3>
+
+                        <p>
+                            Serving others and making a difference
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- VISION -->
+
+            <section class="vision-grid">
+
+                <article class="card vision-card">
+
+                    <h2>
+                        Where we’re headed
+                    </h2>
+
+                    <p>
+                        “To become one of Georgia’s most active,
+                        welcoming, and impactful FCCLA chapters
+                        by developing leaders, strengthening families,
+                        and serving our community.”
+                    </p>
+
+                </article>
+
+                <article class="card this-year">
+
+                    <h2>
+                        This year we will…
+                    </h2>
+
+                    <p>
+                        “Show up. Serve others. Build confidence.
+                        Create opportunities. Leave Morrow better
+                        than we found it.”
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- OFFICERS -->
+
+            <section class="bottom-grid">
+
+                <article>
+
+                    <h2>
+                        Your 2026–2027 chapter team
+                    </h2>
+
+                    <div class="officers">
+
+                        <div class="officer">
+
+                            <h3>
+                                Christian Simon
+                            </h3>
+
+                            <div class="role">
+                                President
+                            </div>
+
+                        </div>
+
+                        <div class="officer">
+
+                            <h3>
+                                Melany Valdez Cabrera
+                            </h3>
+
+                            <div class="role">
+                                Vice President
+                            </div>
+
+                        </div>
+
+                        <div class="officer">
+
+                            <h3>
+                                Kristiuna Kent
+                            </h3>
+
+                            <div class="role">
+                                Public Relations
+                            </div>
+
+                        </div>
+
+                        <div class="officer">
+
+                            <h3>
+                                Avery Miller
+                            </h3>
+
+                            <div class="role">
+                                Secretary
+                            </div>
+
+                        </div>
+
+                        <div class="officer">
+
+                            <h3>
+                                Abraham Pinal
+                            </h3>
+
+                            <div class="role">
+                                Membership
+                            </div>
+
+                        </div>
+
+                        <div class="officer adviser">
+
+                            <h3>
+                                Ms. Trinni Yarn
+                            </h3>
+
+                            <div class="role">
+                                Chapter Adviser
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- QR CODE -->
+
+                <aside class="qr">
+
+                    <h2>
+                        Come hang with us
+                    </h2>
+
+                    <a href="https://www.instagram.com/mhsfccla_family/" target="_blank" rel="noopener">
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAd0AAAHdAQMAAABi8zEtAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJklEQVR4nO2dPXLjMAyFkVHhUkfwUXw062g6io7g0oXGWIH4IeidnW0V6KGIFYgf0vgNARCcEF3QZg570XOnR3t8y+dGh4smXn/k88brJK5uC2DA54b9Wy7w4fqoqwWJ0C/K8UwUgAGXhm/yenOY7fUkMJnQkqr6nwAM+CKwEOIWCe0itGNPaduN2j5qDzDgXwQfO8VHfrpL8iV1HfG+9xXAgEvD1N2pxkiqsgWP/+RhgAFXgsMU/qjQIm/6dnUDDPjU8GBPFhV4vK19+yeN6/C/DTDgWnCqn49twgqKI8jdS2kxSaWmUNMjVAUYcElY26t7LFL4bSlVsgZvJrRV1wIGfGpYK+O7q8DO1HhXV1QObI0lVdMPWx4GGHBJuNlDVsrDlI/ZvKBQCQ3tp2yAAReEB1U9fdtJlbYV3xLEyg1NuF6AAZ8e5l4ZWyGg8Ug7o3HAsNqpssqHAAMuDLfkyCV0rGx64V4/P1mn8fj7gKHFBQy4KDxHpT2U1eaiYUCvJVxzqzXSXgUY8Ilh8iMD0uk5+c0qB82udF9pWmmvWugFMOCycN8xYiW1vIlUQgvZ+TPZ8GnKrgADvgAcenl1uMdjMyIb1B5VBRjw6eDeIVV31ATNNUdjicZUSg0w4MLwjcOG0Tv++5jt7o8fwICrw5Rvn4XQ9p5KsQrNlbSMUx2AAZ8V9u2B+8UBh3PTlKOkJhqKb8CAS8J+2EzePXKhbX77LJcd7MNGM2DAhWGy4erNrjAHTN8FhbpyPMCAzwwPqRRNcT0/CWPNWqHcNAUMuDZseiFLknSQ4t7jecd1y5c3F8CAK8M3dROZm8h7TeHSVb0ej4sNgAGfG14pvvpr3kSSCpitj+pmqRRgwCXhwZ57DB2tXnZQv6PWtWfTeIABV4XnQSdTzKQSjamUPkbZEdc8AQM+L2xvemOJ7Ezt7vHEorU6CgMw4LKw7QWcBil86MgtaY+H+W3AgK8Bt7KaKG6f8XAUQX7yNk4sAQb8G+CmgrflTcneduYwf58/AwZcE+56EXNV+Y7R/99N2A4YcH04rMGPXmk3Wywec+7L2ivAgKvCF7Q/tCLTc2PNQvYAAAAASUVORK5CYII="
+                            alt="Scannable QR code to Morrow High School FCCLA Instagram">
+
+                    </a>
+
+                    <p>
+                        @mhsfccla_family
+                    </p>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                <strong>
+                    Morrow High School FCCLA
+                </strong>
+            </p>
+
+            <p>
+                Leadership • Service • Family • Career
+            </p>
+
+            <p>
+                2026–2027
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
